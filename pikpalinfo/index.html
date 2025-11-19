@@ -3,65 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pikPal Support</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        a {
-            color: #4DB6AC;
-        }
-        .container {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 25px;
-            border-radius: 8px;
-        }
-        .faq-question {
-            font-weight: bold;
-        }
-    </style>
+    <title>pikPal - Foraging Companion & Friend Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>pikPal Support</h1>
-        <p>Welcome to the pikPal support page. We're here to help you get the most out of your foraging adventures!</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">pik<span>Pal</span></a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#faq">Support</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-        <h2>Frequently Asked Questions (FAQ)</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Ultimate Foraging Companion</h1>
+                <p>Discover mushrooms, connect with friends, and explore the outdoors like never before. Join the community today.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Download on App Store</a>
+                    <a href="#" class="btn btn-secondary">Get it on Google Play</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="app_mockup.png" alt="pikPal App Interface">
+            </div>
+        </div>
+    </section>
 
-        <p class="faq-question">Why did my mushroom log disappear from the map?</p>
-        <p>To keep the map fresh and relevant, all mushroom logs automatically expire and are removed from the map 24 hours after they are posted.</p>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why pikPal?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🍄</div>
+                    <h3>Mushroom Logs</h3>
+                    <p>Find and share mushroom locations. Logs stay fresh for 24 hours to ensure accuracy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>GPS Tracking</h3>
+                    <p>Easily mark your current location or manually add coordinates for precise tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Friend Finder</h3>
+                    <p>Connect with other foragers nearby. Control your visibility with simple privacy settings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p class="faq-question">How does the "Friends" feature work?</p>
-        <p>The Friends feature allows you to find other users who have also chosen to be discoverable. To appear in this list, you must enable the "Allow others to find me" toggle in your Profile Settings. Your location is only used to calculate the distance between you and other users; it is never shared directly.</p>
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <span class="faq-question">Why did my mushroom log disappear from the map?</span>
+                <p>To keep the map fresh and relevant, all mushroom logs automatically expire and are removed from the map 24 hours after they are posted.</p>
+            </div>
 
-        <p class="faq-question">How do I add my current location to a new mushroom log?</p>
-        <p>When adding a new mushroom, you can manually type in GPS coordinates, or you can tap the "Current" button. This will use your device's current location to automatically fill in the latitude and longitude fields, provided you have given the app permission to access your location.</p>
-        
-        <p class="faq-question">How do I delete my account?</p>
-        <p>You can permanently delete your account and all of your data by navigating to the Profile tab, then tapping Settings. At the bottom of the Settings screen, you will find a "Delete My Account" button. Please be aware that this action is permanent and cannot be undone.</p>
+            <div class="faq-item">
+                <span class="faq-question">How does the "Friends" feature work?</span>
+                <p>The Friends feature allows you to find other users who have also chosen to be discoverable. To appear in this list, you must enable the "Allow others to find me" toggle in your Profile Settings. Your location is only used to calculate the distance between you and other users; it is never shared directly.</p>
+            </div>
 
-        <h2>Contact Us</h2>
-        <p>
-            If your question wasn't answered above, or if you have any feedback or issues to report, please don't hesitate to get in touch.
-        </p>
-        <p>
-            The best way to reach us is by email:
-        </p>
-        <p>
-            <a href="mailto:contactraisecheckfold@gmail.com"><strong>contactraisecheckfold@gmail.com</strong></a>
-        </p>
-        <p>
-            To help us resolve your issue as quickly as possible, please include your username and the type of device you are using (e.g., iPhone 14 Pro).
-        </p>
-    </div>
+            <div class="faq-item">
+                <span class="faq-question">How do I add my current location to a new mushroom log?</span>
+                <p>When adding a new mushroom, you can manually type in GPS coordinates, or you can tap the "Current" button. This will use your device's current location to automatically fill in the latitude and longitude fields, provided you have given the app permission to access your location.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">How do I delete my account?</span>
+                <p>You can permanently delete your account and all of your data by navigating to the Profile tab, then tapping Settings. At the bottom of the Settings screen, you will find a "Delete My Account" button. Please be aware that this action is permanent and cannot be undone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="mailto:contactraisecheckfold@gmail.com">Contact Support</a>
+            </div>
+            <div class="contact-info">
+                <p>Questions? Email us at <a href="mailto:contactraisecheckfold@gmail.com">contactraisecheckfold@gmail.com</a></p>
+                <p>Please include your username and device type for faster support.</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 raisecheckfold.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
