@@ -99,12 +99,27 @@
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (emailRegex.test(email)) {
-                // Simulate API call/submission
-                form.style.display = 'none';
-                successMessage.style.display = 'block';
-
-                // Here you would typically send the data to your backend
-                console.log('Email submitted:', email);
+                // Send data to backend
+                fetch('/submit-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email: email }),
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            form.style.display = 'none';
+                            successMessage.style.display = 'block';
+                            console.log('Email submitted:', email);
+                        } else {
+                            alert('發生錯誤。請重試。');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('提交電子郵件時發生錯誤。請重試。');
+                    });
             } else {
                 alert('請輸入有效的電子郵件地址。');
             }
