@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the pikPal Android Beta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">pik<span>Pal</span></a>
+                <div class="nav-links">
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#faq">Support</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="hero" style="min-height: auto; padding-bottom: 40px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Join the Android Beta</h1>
+                <p>Be among the first to experience pikPal on Android. Help us test new features and shape the future of
+                    foraging.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <!-- Video Section -->
+        <div class="video-container">
+            <!-- Replace this div with your actual video embed code (e.g., YouTube iframe) -->
+            <div class="video-placeholder">
+                <span>Video Preview Coming Soon</span>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="beta-signup">
+            <h2>Get Early Access</h2>
+            <p>Enter your email address to sign up for the beta program. We'll notify you when it's ready for download.
+            </p>
+
+            <form id="betaForm" class="signup-form">
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <button type="submit">Join Beta</button>
+            </form>
+
+            <div id="successMessage" class="success-message">
+                <strong>Thank you!</strong> You've been added to the beta list. We'll be in touch soon.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="mailto:contactraisecheckfold@gmail.com">Contact Support</a>
+            </div>
+            <div class="contact-info">
+                <p>Questions? Email us at <a
+                        href="mailto:contactraisecheckfold@gmail.com">contactraisecheckfold@gmail.com</a></p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 raisecheckfold.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('betaForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value;
+            const successMessage = document.getElementById('successMessage');
+            const form = this;
+
+            // Simple email validation regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailRegex.test(email)) {
+                // Simulate API call/submission
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+
+                // Here you would typically send the data to your backend
+                console.log('Email submitted:', email);
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+    </script>
+</body>
+
+</html>

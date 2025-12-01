@@ -263,3 +263,110 @@ footer {
         max-width: 300px;
     }
 }
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin: 30px 0;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #2c3e50, #4DB6AC);
+}
+
+/* Beta Signup Form */
+.beta-signup {
+    background: var(--bg-light);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: var(--shadow);
+}
+
+.beta-signup h2 {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.beta-signup p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.signup-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.signup-form input[type="email"] {
+    flex: 1;
+    min-width: 250px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+}
+
+.signup-form input[type="email"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(77, 182, 172, 0.2);
+}
+
+.signup-form button {
+    padding: 12px 30px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.signup-form button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.success-message {
+    display: none;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid #c8e6c9;
+}
