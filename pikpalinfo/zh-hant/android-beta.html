@@ -50,14 +50,15 @@
             <h2>搶先體驗</h2>
             <p>輸入您的電子郵件地址註冊 Beta 計畫。我們會在開放下載時通知您。</p>
 
-            <form id="betaForm" class="signup-form">
-                <input type="email" id="email" placeholder="輸入您的電子郵件地址" required>
-                <button type="submit">加入 Beta</button>
-            </form>
-
-            <div id="successMessage" class="success-message">
-                <strong>謝謝！</strong> 您已加入 Beta 名單。我們會盡快與您聯繫。
-            </div>
+            <!-- 
+                TODO: Replace the src attribute below with your Google Form embed URL.
+                1. Go to your Google Form.
+                2. Click "Send".
+                3. Click the "< >" (Embed HTML) tab.
+                4. Copy the URL from the 'src' attribute.
+            -->
+            <iframe src="https://pikpal-android-beta-access-54035758115.us-west1.run.app" width="100%" height="600"
+                frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
         </div>
         <!-- Video Section -->
         <div class="video-container">
@@ -85,46 +86,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('betaForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const emailInput = document.getElementById('email');
-            const email = emailInput.value;
-            const successMessage = document.getElementById('successMessage');
-            const form = this;
-
-            // Simple email validation regex
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-            if (emailRegex.test(email)) {
-                // Send data to backend
-                fetch('/submit-email', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ email: email }),
-                })
-                    .then(response => {
-                        if (response.ok) {
-                            form.style.display = 'none';
-                            successMessage.style.display = 'block';
-                            console.log('Email submitted:', email);
-                        } else {
-                            alert('發生錯誤。請重試。');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        alert('提交電子郵件時發生錯誤。請重試。');
-                    });
-            } else {
-                alert('請輸入有效的電子郵件地址。');
-            }
-        });
-    </script>
 </body>
 
 </html>
