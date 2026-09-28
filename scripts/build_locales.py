@@ -94,7 +94,8 @@ class Renderer(HTMLParser):
     def handle_endtag(self, tag):
         if tag == 'head':
             css = relative('assets/css/languages.css', self.current)
-            self.output.append(f'<link rel="stylesheet" href="{css}">\n<link rel="canonical" href="{ORIGIN}{self.current}">\n')
+            glass = relative('assets/css/glass.css', self.current)
+            self.output.append(f'<link rel="stylesheet" href="{css}">\n<link rel="stylesheet" href="{glass}">\n<link rel="canonical" href="{ORIGIN}{self.current}">\n')
             for code in LANGUAGES:
                 self.output.append(f'<link rel="alternate" hreflang="{code}" href="{ORIGIN}{localized(self.page, code)}">\n')
             self.output.append(f'<link rel="alternate" hreflang="x-default" href="{ORIGIN}{self.page}">\n')

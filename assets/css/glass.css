@@ -1,0 +1,168 @@
+/* Shared glass surfaces. Solid defaults also work without backdrop-filter. */
+:root {
+    --glass-ink: #172e46;
+    --glass-muted: #465b72;
+    --glass-accent: #215cca;
+    --glass-surface: #f2f6ff;
+    --glass-edge: rgba(255, 255, 255, .9);
+    --glass-shadow: 0 16px 48px #23497512, inset 0 1px 0 #fff, inset 0 -1px 0 #ffffff60;
+    --glass-radius: 28px;
+}
+body {
+    color: var(--glass-ink);
+    background: #eaf0fa;
+    background-image: radial-gradient(ellipse at 5% 5%, #b7d8f6 0, transparent 42%), radial-gradient(ellipse at 95% 25%, #d6c7f2 0, transparent 38%), radial-gradient(ellipse at 30% 90%, #b8e8df 0, transparent 45%);
+    background-attachment: fixed;
+}
+body.app-poker {
+    --ink: var(--glass-ink);
+    --muted: var(--glass-muted);
+    --glass-accent: #216978;
+    background-image: radial-gradient(ellipse at 5% 8%, #a8d9e5 0, transparent 42%), radial-gradient(ellipse at 90% 20%, #e9d9b1 0, transparent 40%), radial-gradient(ellipse at 25% 95%, #c3d2f4 0, transparent 42%);
+}
+body.app-dog {
+    color-scheme: dark;
+    --glass-ink: #f0faf7;
+    --glass-muted: #c2d8d2;
+    --glass-accent: #bbf6dc;
+    --glass-surface: #183b36;
+    --glass-edge: #b8eadb45;
+    --glass-shadow: 0 20px 60px #001a1940, inset 0 1px 0 #e2fff838, inset 0 -1px 0 #ffffff08;
+    --text: var(--glass-ink);
+    --muted: var(--glass-muted);
+    background-color: #102b30;
+    background-image: radial-gradient(ellipse at 0% 5%, #306c63 0, transparent 48%), radial-gradient(ellipse at 100% 35%, #374b77 0, transparent 45%), radial-gradient(ellipse at 10% 95%, #164d42 0, transparent 45%);
+}
+/* One surface treatment for navigation, content, controls, and documents. */
+body > header, .language-switcher, .app-link, .feature-card,
+.feature-grid article, .faq-item, details, .hero-art, .hero-visual,
+.beta-signup, .site-document main {
+    background: var(--glass-surface);
+    border: 1px solid var(--glass-edge);
+    box-shadow: var(--glass-shadow);
+    border-radius: var(--glass-radius);
+}
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    :root { --glass-surface: rgba(255, 255, 255, .52); }
+    body.app-dog { --glass-surface: rgba(24, 56, 55, .62); }
+    body > header, .language-switcher, .app-link, .feature-card,
+    .feature-grid article, .faq-item, details, .hero-art, .hero-visual,
+    .beta-signup, .site-document main {
+        -webkit-backdrop-filter: blur(22px) saturate(140%);
+        backdrop-filter: blur(22px) saturate(140%);
+    }
+}
+body > header {
+    position: relative;
+    top: auto;
+    z-index: 5;
+    width: min(1160px, calc(100% - 40px));
+    margin: 20px auto 0;
+    padding: 0;
+    border-radius: 30px;
+}
+body > header > .container, body > header > nav.container { width: 100%; padding-inline: 26px; }
+body > header nav { min-height: 80px; }
+.nav-links a, .logo, .brand { color: var(--glass-ink); }
+.nav-links a:hover { color: var(--glass-accent); }
+.language-switcher {
+    width: fit-content;
+    max-width: calc(100% - 40px);
+    gap: 4px;
+    padding: 6px;
+    margin-block: 20px 34px;
+    border-radius: 28px;
+    color: var(--glass-ink);
+    font-size: 12px;
+}
+.language-switcher a { padding: 9px 14px; border-radius: 22px; }
+.language-switcher a[aria-current="page"] { background: #ffffff9c; border-color: #ffffffb3; box-shadow: 0 3px 12px #193c691a; color: #172e46; }
+.language-switcher a:hover { background: #ffffff65; color: #172e46; text-decoration: none; }
+.hero, .features, .faq { background: transparent; }
+.hero-content h1, .section-title, h1, h2, h3 { color: var(--glass-ink); }
+.hero-content p, .intro, .feature-card > p:last-child, .feature-grid p, .contact-section p:not(.eyebrow) { color: var(--glass-muted); }
+h1 span, .eyebrow, .text-link { color: var(--glass-accent); }
+.button, .btn {
+    border-radius: 999px;
+    border: 1px solid #ffffffa6;
+    box-shadow: 0 6px 18px #244b7b1a, inset 0 1px 0 #ffffff70;
+    transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.primary, .btn-primary { background: linear-gradient(155deg, #4480e5, #2554af); color: #fff; }
+.primary:hover, .btn-primary:hover { background: #2154ad; color: #fff; box-shadow: 0 8px 24px #2154ad30; }
+.app-poker .primary { background: linear-gradient(155deg, #337d8d, #17485c); }
+.app-poker .primary:hover { background: #17485c; }
+.app-dog .primary { background: linear-gradient(155deg, #d8ffee, #a2e5cd); color: #123b35; }
+.app-dog .primary:hover { background: #d8ffee; color: #123b35; }
+.secondary, .btn-secondary { background: var(--glass-surface); color: var(--glass-ink); }
+.secondary:hover, .btn-secondary:hover { background: #ffffffaa; color: #172e46; }
+.hero-art, .hero-visual { border-radius: 48px; }
+.hero-art { background-image: radial-gradient(ellipse at top, #ffffff66, transparent 65%); }
+.hero-art figcaption, .hero-visual figcaption { color: var(--glass-ink); }
+.hero-art img { box-shadow: 0 25px 45px #14374638; }
+.suit { color: #2458750c; }
+.feature-section, .section { border-color: #718da52b; }
+.feature-grid .feature-accent { background: #fff2cdad; border-color: #fff9e8; }
+.feature-number { color: #536979; }
+.support-section { background: transparent; border: 0; color: var(--glass-ink); }
+.support-intro .eyebrow { color: var(--glass-accent); }
+.support-intro p:not(.eyebrow), details p { color: var(--glass-muted); }
+details, details:first-child { border: 1px solid var(--glass-edge); margin-bottom: 12px; border-radius: 20px; padding-inline: 20px; }
+summary { padding-block: 21px; }
+details[open] { box-shadow: var(--glass-shadow), 0 0 0 1px #7894b822; }
+.faq-item { padding: 26px; }
+.faq-question { color: var(--glass-ink); }
+.beta-signup h2 { color: var(--glass-ink); }
+.beta-signup p { color: var(--glass-muted); }
+.hero-image { border: 1px solid var(--glass-edge); border-radius: 32px; box-shadow: var(--glass-shadow); }
+footer { background: transparent; color: var(--glass-muted); border-color: #718da52b; }
+footer a, .contact-info, .copyright { color: var(--glass-muted); }
+.footer-links a, .contact-info a { color: var(--glass-ink); }
+.copyright { border-color: #718da52b; }
+.site-document { padding-top: 28px; }
+.site-document main { padding: clamp(24px, 5vw, 48px); }
+.site-document a { color: #205aa8; }
+.site-document .language-switcher a { color: var(--glass-ink); }
+.site-document h2 { margin-top: 32px; }
+.app-dog .policy-container { padding: clamp(24px, 5vw, 48px); margin-bottom: 40px; }
+.app-dog.site-document a { color: var(--glass-accent); }
+.site-home { max-width: 1060px; padding-top: 48px; }
+.site-home h1 { font-size: clamp(30px, 4vw, 48px); letter-spacing: -1.5px; line-height: 1.15; margin-block: 44px 24px; }
+.site-home main > p { color: var(--glass-muted); margin-bottom: 38px; }
+.app-list { gap: 20px; }
+.app-link { flex: 1 1 230px; margin: 0; padding: 38px 24px; text-align: left; }
+.app-link h2 { color: var(--glass-ink); font-size: 24px; }
+.app-link p { color: var(--glass-muted); font-size: 14px; }
+.app-link:hover { box-shadow: 0 20px 45px #21467924, inset 0 1px 0 #fff; }
+@media (max-width: 600px) {
+    body { background-attachment: scroll; }
+    body > header { width: calc(100% - 24px); margin-top: 12px; border-radius: 24px; }
+    body > header > .container, body > header > nav.container { padding-inline: 20px; }
+    body > header nav { padding-block: 18px; gap: 16px; }
+    .language-switcher { max-width: calc(100% - 24px); margin-block: 16px 24px; }
+    .language-switcher a { padding: 8px 10px; }
+    .hero-art, .hero-visual { border-radius: 36px; }
+    .site-home { padding-inline: 20px; padding-top: 20px; }
+    .site-home h1 { margin-top: 32px; letter-spacing: -.8px; }
+    .app-link { flex-basis: 100%; }
+    details { padding-inline: 16px; }
+}
+/* Keep surfaces opaque when users request less transparency or more contrast. */
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+    :root { --glass-surface: #f4f7fc; --glass-edge: #8a9cb4; }
+    body.app-dog { --glass-surface: #183b36; --glass-edge: #86a99e; }
+    body > header, .language-switcher, .app-link, .feature-card,
+    .feature-grid article, .faq-item, details, .hero-art, .hero-visual,
+    .beta-signup, .site-document main { -webkit-backdrop-filter: none; backdrop-filter: none; background-image: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+    .app-link:hover, .btn:hover { transform: none; }
+}
+@media (forced-colors: active) {
+    body, .app-dog { background: Canvas; color: CanvasText; }
+    .primary, .secondary, .btn, .language-switcher a[aria-current="page"] { border: 1px solid ButtonText; }
+}
+.site-document .language-switcher a[aria-current="page"],
+.site-document .language-switcher a:hover { color: #172e46; }

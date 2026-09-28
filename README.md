@@ -28,6 +28,7 @@ The generator requires complete catalogs and rejects unknown source text. It tra
 - `assets/css/home.css`: app directory layout.
 - `assets/css/document.css`: shared support and privacy document layout.
 - `assets/css/languages.css`: language navigation and translated heading layout.
+- `assets/css/glass.css`: shared liquid-glass-inspired theme, with app palettes, opaque fallbacks, and reduced-transparency/motion support. Loaded last by the page generator.
 - `locales/`: translation catalogs and source templates.
 - `pikpalinfo/`, `pokerplayernote/`, `dogkona/`: generated public pages, shared app styles, and assets.
 - `dogkona/index/`, `dogkona/privacy/`: existing compatibility redirects.
