@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pikPal - 您的採集好夥伴與交友助手</title>
+    <link rel="stylesheet" href="../../assets/css/base.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">跳至主要內容</a>
     <!-- Header -->
     <header>
         <div class="container">
-            <nav>
-                <a href="#" class="logo">pik<span>Pal</span></a>
+            <nav aria-label="主要導覽">
+                <a href="index.html" class="logo">pik<span>Pal</span></a>
                 <div class="nav-links">
-                    <a href="https://www.raisecheckfold.com" aria-label="RaiseCheckFold Home"
-                        style="display: inline-flex; align-items: center;">
+                    <a href="../../index.html" aria-label="RaiseCheckFold Home"
+                        class="home-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -27,79 +29,82 @@
                     <a href="#features">功能</a>
                     <a href="#faq">支援</a>
                     <a href="#contact">聯絡我們</a>
-                    <a href="../index.html" style="margin-left: 10px; font-size: 0.9em;">English</a>
+                    <a href="../index.html" class="language-link">English</a>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>您的終極採集好夥伴</h1>
-                <p>發現蘑菇、連結好友，以前所未有的方式探索戶外。立即加入我們的社群。</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">App Store 下載</a>
-                    <a href="android-beta.html" class="btn btn-secondary">Google Play 下載</a>
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>您的終極採集好夥伴</h1>
+                    <p>發現蘑菇、連結好友，以前所未有的方式探索戶外。立即加入我們的社群。</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">App Store 下載</a>
+                        <a href="android-beta.html" class="btn btn-secondary">Google Play 下載</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../app_mockup.png" alt="pikPal 應用程式介面">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="../app_mockup.png" alt="pikPal 應用程式介面">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">為什麼選擇 pikPal？</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🍄</div>
-                    <h3>蘑菇紀錄</h3>
-                    <p>尋找並分享蘑菇位置。紀錄僅保留 24 小時以確保準確性。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📍</div>
-                    <h3>GPS 追蹤</h3>
-                    <p>輕鬆標記您目前的位置，或手動新增座標以進行精確追蹤。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>尋找朋友</h3>
-                    <p>連結附近的採集者。透過簡單的隱私設定控制您的可見度。</p>
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">為什麼選擇 pikPal？</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🍄</div>
+                        <h3>蘑菇紀錄</h3>
+                        <p>尋找並分享蘑菇位置。紀錄僅保留 24 小時以確保準確性。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📍</div>
+                        <h3>GPS 追蹤</h3>
+                        <p>輕鬆標記您目前的位置，或手動新增座標以進行精確追蹤。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>尋找朋友</h3>
+                        <p>連結附近的採集者。透過簡單的隱私設定控制您的可見度。</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2 class="section-title">常見問題</h2>
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">常見問題</h2>
 
-            <div class="faq-item">
-                <span class="faq-question">為什麼我的蘑菇紀錄從地圖上消失了？</span>
-                <p>為了保持地圖的新鮮度與關聯性，所有蘑菇紀錄在發布 24 小時後會自動過期並從地圖上移除。</p>
+                <div class="faq-item">
+                    <span class="faq-question">為什麼我的蘑菇紀錄從地圖上消失了？</span>
+                    <p>為了保持地圖的新鮮度與關聯性，所有蘑菇紀錄在發布 24 小時後會自動過期並從地圖上移除。</p>
+                </div>
+
+                <div class="faq-item">
+                    <span class="faq-question">「朋友」功能是如何運作的？</span>
+                    <p>「朋友」功能讓您可以尋找其他同樣選擇被發現的使用者。若要出現在此列表中，您必須在「個人資料設定」中啟用「允許其他人找到我」。您的位置僅用於計算您與其他使用者之間的距離，絕不會直接分享。</p>
+                </div>
+
+                <div class="faq-item">
+                    <span class="faq-question">如何將我目前的位置加入到新的蘑菇紀錄中？</span>
+                    <p>新增蘑菇時，您可以手動輸入 GPS 座標，或點擊「目前位置」按鈕。若您已授權應用程式存取您的位置，系統將使用您裝置的目前位置自動填入緯度和經度欄位。</p>
+                </div>
+
+                <div class="faq-item">
+                    <span class="faq-question">如何刪除我的帳戶？</span>
+                    <p>您可以前往「個人資料」分頁，點擊「設定」。在設定畫面的底部，您會找到「刪除我的帳戶」按鈕。請注意，此操作是永久性的，無法復原。</p>
+                </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <span class="faq-question">「朋友」功能是如何運作的？</span>
-                <p>「朋友」功能讓您可以尋找其他同樣選擇被發現的使用者。若要出現在此列表中，您必須在「個人資料設定」中啟用「允許其他人找到我」。您的位置僅用於計算您與其他使用者之間的距離，絕不會直接分享。</p>
-            </div>
-
-            <div class="faq-item">
-                <span class="faq-question">如何將我目前的位置加入到新的蘑菇紀錄中？</span>
-                <p>新增蘑菇時，您可以手動輸入 GPS 座標，或點擊「目前位置」按鈕。若您已授權應用程式存取您的位置，系統將使用您裝置的目前位置自動填入緯度和經度欄位。</p>
-            </div>
-
-            <div class="faq-item">
-                <span class="faq-question">如何刪除我的帳戶？</span>
-                <p>您可以前往「個人資料」分頁，點擊「設定」。在設定畫面的底部，您會找到「刪除我的帳戶」按鈕。請注意，此操作是永久性的，無法復原。</p>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer id="contact">

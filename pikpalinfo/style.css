@@ -6,7 +6,7 @@
     --bg-light: #f9f9f9;
     --white: #ffffff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 * {
@@ -57,7 +57,7 @@ nav {
 }
 
 .nav-links a {
-    margin-left: 20px;
+
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: 500;
@@ -157,7 +157,7 @@ nav {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -322,51 +322,17 @@ footer {
     color: #666;
 }
 
-.signup-form {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.signup-form input[type="email"] {
-    flex: 1;
-    min-width: 250px;
-    padding: 12px 20px;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    font-size: 1rem;
-    outline: none;
-    transition: var(--transition);
-}
-
-.signup-form input[type="email"]:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(77, 182, 172, 0.2);
-}
-
-.signup-form button {
-    padding: 12px 30px;
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.signup-form button:hover {
-    background-color: var(--primary-dark);
-    transform: translateY(-2px);
-}
-
-.success-message {
-    display: none;
-    background-color: #e8f5e9;
-    color: #2e7d32;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-    border: 1px solid #c8e6c9;
+/* Navigation wraps without overflowing narrow screens. */
+html { scroll-padding-top: 150px; }
+nav { gap: 16px; flex-wrap: wrap; }
+.nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.home-link { display: inline-flex; align-items: center; }
+.nav-links .language-link { font-size: .9em; }
+.hero-beta { padding-bottom: 40px; }
+.beta-frame { border: 0; display: block; }
+@media (max-width: 480px) {
+    header { position: static; }
+    html { scroll-padding-top: 20px; }
+    .beta-signup { padding: 20px; }
+    .video-placeholder { font-size: 1rem; }
 }
