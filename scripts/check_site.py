@@ -34,7 +34,7 @@ class Page(HTMLParser):
 
 
 def main():
-    pages = {path: Page(path) for path in ROOT.rglob('*.html') if '.git' not in path.parts}
+    pages = {path: Page(path) for path in ROOT.rglob('*.html') if '.git' not in path.parts and 'locales' not in path.relative_to(ROOT).parts}
     errors = []
     placeholders = []
     for path, page in pages.items():

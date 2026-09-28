@@ -1,0 +1,27 @@
+/* Shared language navigation, isolated from each app's navigation styles. */
+.language-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
+    margin: 20px auto;
+    padding: 0 16px;
+    max-width: 1120px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.language-switcher a {
+    display: inline-block;
+    color: inherit;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher a[aria-current="page"] { border-color: currentColor; font-weight: 700; }
+.language-switcher a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+/* Translated headings can be longer than their English counterparts. */
+h1, h2, h3 { overflow-wrap: anywhere; }
+:lang(ja) h1, :lang(zh-Hant) h1, :lang(zh-Hans) h1,
+:lang(ja) h2, :lang(zh-Hant) h2, :lang(zh-Hans) h2 { letter-spacing: normal; }
