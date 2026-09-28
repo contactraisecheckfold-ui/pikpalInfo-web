@@ -47,4 +47,8 @@ These commands verify reproducible output, local assets and fragment links, basi
 
 ## Existing content limitations
 
-The pikPal App Store buttons still have placeholder destinations. PokerNote's privacy policy retains its original developer/date placeholders in each language. Confirm those details before replacing them. The external Android beta signup service and text inside app screenshots are outside this repository; their content is not translated by this site generator.
+The pikPal App Store buttons still have placeholder destinations. The external Android beta signup service and text inside app screenshots are outside this repository; their content is not translated by this site generator.
+
+## pokerNote listing alignment
+
+The pokerNote marketing and privacy pages were reconciled with the [App Store listing](https://apps.apple.com/us/app/pokernote/id6471785611) and Apple's live lookup response on September 28, 2026. The listing's four app languages are distinct from the website's six translations. Live release notes confirm CSV export and JSON backup/restore; do not infer released features solely from local development code. Screenshots and their source URLs are documented in `pokerplayernote/assets/SOURCES.md`. Privacy copy separates local records from advertising and attributes the published disclosure categories to the App Store listing.

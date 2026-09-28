@@ -47,6 +47,23 @@ class LocalizationTests(unittest.TestCase):
         renderer.feed('<p>Example</p>')
         self.assertEqual(''.join(renderer.output), '<p>&lt;script&gt;alert(1)&lt;/script&gt;</p>')
 
+    def test_pokernote_store_links_and_screenshots(self):
+        for language in LANGUAGES:
+            page = ROOT / localized('pokerplayernote/index.html', language)
+            tags = Tags(page.read_text()).tags
+            store_buttons = [a for t, a in tags if t == 'a' and a.get('class') == 'button primary' and a.get('href') == 'https://apps.apple.com/us/app/pokernote/id6471785611']
+            self.assertEqual(len(store_buttons), 1, language)
+            screenshots = [a for t, a in tags if t == 'img' and any(a.get('src', '').endswith('/' + name + '.png') for name in ['table', 'players', 'tools'])]
+            self.assertEqual(len(screenshots), 4, language)
+            for screenshot in screenshots:
+                self.assertTrue((page.parent / screenshot['src']).is_file())
+                self.assertTrue(screenshot.get('alt'))
+            policy = (ROOT / localized('pokerplayernote/privacy/index.html', language)).read_text()
+            self.assertIn('id6471785611#app-privacy', policy)
+            self.assertIn('https://policies.google.com/privacy', policy)
+            self.assertNotIn('[Date]', policy)
+            self.assertNotIn('[Your Company/Developer Name]', policy)
+
     def test_generated_metadata_and_switchers(self):
         for language in LANGUAGES:
             for page in PAGES:

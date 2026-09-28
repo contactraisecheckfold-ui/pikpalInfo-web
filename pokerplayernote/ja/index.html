@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="iPhone・iPad 向け PokerNote でプレイヤーメモ、ハンドレンジ、テーブル、ポーカーセッションを管理。機能とサポートをご案内します。">
+    <meta name="description" content="iPhone・iPad 向け pokerNote でプレイヤーメモ、ハンドレンジ、テーブル、ポーカーセッションを管理。機能とサポートをご案内します。">
     <meta name="theme-color" content="#082b36">
-    <title>PokerNote — プレイヤーメモ・レンジ・セッション</title>
+    <title>pokerNote — プレイヤーメモ・レンジ・セッション</title>
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="stylesheet" href="../../assets/css/base.css">
     <link rel="stylesheet" href="../style.css">
@@ -24,7 +24,7 @@
     <a class="skip-link" href="#main">本文へスキップ</a>
     <header class="site-header">
         <nav class="container top-nav" aria-label="メインナビゲーション">
-            <a class="brand" href="index.html"><img src="../assets/app-icon.png" alt="" width="40" height="40">PokerNote</a>
+            <a class="brand" href="index.html"><img src="../assets/app-icon.png" alt="" width="40" height="40">pokerNote</a>
             <div class="nav-links"><a href="#features">機能</a><a href="#faq">サポート</a><a href="privacy/index.html">プライバシー</a><a href="../../ja/index.html">すべてのアプリ ↗</a></div>
         </nav>
     </header>
@@ -32,17 +32,25 @@
 <main id="main">
         <section class="hero container">
             <div class="hero-copy">
-                <p class="eyebrow">あなたのポーカーノート</p>
+                <p class="eyebrow">テキサスホールデムのパートナー</p>
                 <h1>プレイヤーを覚える。<br><span>細かな気づきを残す。</span></h1>
-                <p class="intro">観察したことを整理されたプレイヤーメモに。PokerNote でハンドレンジ、テーブルの顔ぶれ、セッションの記録をいつでも手元に。</p>
-                <div class="actions"><a class="button primary" href="#features">PokerNote を見る <span aria-hidden="true">↗</span></a><a class="button secondary" href="#faq">ヘルプを見る</a></div>
-                <p class="device-note">iPhone・iPad 向け · iOS 17.6 以降</p>
+                <p class="intro">観察したことを整理されたプレイヤーメモに。pokerNote でハンドレンジ、テーブルの顔ぶれ、セッションの記録をいつでも手元に。</p>
+                <div class="actions"><a class="button primary" href="https://apps.apple.com/us/app/pokernote/id6471785611">App Store でダウンロード <span aria-hidden="true">↗</span></a><a class="button secondary" href="#faq">ヘルプを見る</a></div>
+                <p class="device-note">App Store で無料 · 開発者 Michael Yang</p><p class="device-note">iPhone・iPad 向け · iOS 17.6 以降</p>
             </div>
-            <figure class="hero-art">
-                <span class="suit suit-one" aria-hidden="true">♠</span><span class="suit suit-two" aria-hidden="true">♣</span>
-                <img src="../assets/app-icon.png" width="1024" height="1024" alt="PokerNote のアイコン：ノート、スペード、鉛筆、ポーカーチップ">
-                <figcaption>すべての気づきに、居場所を。</figcaption>
+            <figure class="hero-art store-preview">
+                <img src="../assets/players.png" width="392" height="696" alt="色分け、お気に入り、メモ、レンジの割合を表示する pokerNote のプレイヤーリスト">
+                <figcaption>アプリの様子をひと目で。</figcaption>
             </figure>
+        </section>
+        <section class="container screenshots-section" aria-labelledby="screenshots-title">
+            <p class="eyebrow">POKERNOTE の画面</p><h2 id="screenshots-title">メモを実際の画面で。</h2>
+            <p class="gallery-note">App Store の公式スクリーンショットです。画面は英語で、アプリのバージョンによって表示が異なる場合があります。</p>
+            <div class="screenshots-grid">
+                <figure><img src="../assets/table.png" width="392" height="696" loading="lazy" alt="色分けされた 9 人分の席を表示する pokerNote のテーブル"><figcaption>テーブルを整理する</figcaption></figure>
+                <figure><img src="../assets/players.png" width="392" height="696" loading="lazy" alt="色分け、お気に入り、メモ、レンジの割合を表示する pokerNote のプレイヤーリスト"><figcaption>対戦相手を覚えておく</figcaption></figure>
+                <figure><img src="../assets/tools.png" width="392" height="696" loading="lazy" alt="割合を設定するスライダーと生成結果を表示する pokerNote のアクションジェネレーター"><figcaption>割合を指定するアクションジェネレーター。</figcaption></figure>
+            </div>
         </section>
         <section class="feature-section container" id="features">
             <div class="section-heading"><p class="eyebrow">ひとことメモの、その先へ</p><h2>あなたのテーブル。<br>あなたのメモ。あなたの記録。</h2></div>
@@ -64,6 +72,7 @@
                     <details><summary>データをバックアップ・書き出しするには？</summary><p>「機能 → バックアップと復元」を開きます。「バックアップを書き出す」で JSON を「ファイル」に保存できます。「CSV を書き出す」ではプレイヤー、セッション、場所、テーブル、席を選んで表計算用に書き出せます。</p></details>
                     <details><summary>バックアップを復元するとどうなりますか？</summary><p>「機能 → バックアップと復元」で「バックアップを復元」を選び、JSON バックアップを指定します。内容を確認してから確定してください。復元は現在のすべてのデータを置き換え、取り消せません。現在の記録を残したい場合は、先にバックアップを書き出してください。CSV ファイルでは復元できません。</p></details>
                     <details><summary>メモは端末間で同期されますか？</summary><p>記録は端末内に保存され、自動クラウド同期はありません。別のコピーを残したり、他の端末で復元したりするには JSON バックアップを書き出してください。復元すると、復元先の端末の現在のデータが置き換わります。</p></details>
+                    <details><summary>アプリの対応言語は？</summary><p>アプリは英語、スペイン語、繁体字中国語、簡体字中国語に対応しています。フランス語と日本語はウェブサイトの翻訳です。</p></details>
                     <details><summary>プライバシー情報はどこで確認できますか？</summary><p><a href="privacy/index.html">プライバシーポリシー</a></p></details>
                 </div>
             </div>
@@ -73,6 +82,6 @@
             <a class="button primary email" href="mailto:contactraisecheckfold@gmail.com">サポートに連絡 <span aria-hidden="true">↗</span></a>
         </section>
     </main>
-    <footer class="container"><p>© 2026 raisecheckfold.com · PokerNote</p><div><a href="#contact">サポートに連絡</a><a href="privacy/index.html">プライバシーポリシー</a><a href="../../ja/index.html">すべてのアプリ ↗</a></div></footer>
+    <footer class="container"><p>© 2026 raisecheckfold.com · pokerNote</p><div><a href="#contact">サポートに連絡</a><a href="privacy/index.html">プライバシーポリシー</a><a href="../../ja/index.html">すべてのアプリ ↗</a></div></footer>
 </body>
 </html>

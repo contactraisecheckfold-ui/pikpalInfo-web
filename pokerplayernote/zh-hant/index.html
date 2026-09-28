@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="使用 iPhone 與 iPad 版 PokerNote 記錄玩家筆記、探索手牌範圍、整理牌桌並回顧牌局。功能介紹與支援。">
+    <meta name="description" content="使用 iPhone 與 iPad 版 pokerNote 記錄玩家筆記、探索手牌範圍、整理牌桌並回顧牌局。功能介紹與支援。">
     <meta name="theme-color" content="#082b36">
-    <title>PokerNote — 玩家筆記、範圍與牌局紀錄</title>
+    <title>pokerNote — 玩家筆記、範圍與牌局紀錄</title>
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="stylesheet" href="../../assets/css/base.css">
     <link rel="stylesheet" href="../style.css">
@@ -24,7 +24,7 @@
     <a class="skip-link" href="#main">跳至主要內容</a>
     <header class="site-header">
         <nav class="container top-nav" aria-label="主要導覽">
-            <a class="brand" href="index.html"><img src="../assets/app-icon.png" alt="" width="40" height="40">PokerNote</a>
+            <a class="brand" href="index.html"><img src="../assets/app-icon.png" alt="" width="40" height="40">pokerNote</a>
             <div class="nav-links"><a href="#features">功能</a><a href="#faq">支援</a><a href="privacy/index.html">隱私權</a><a href="../../zh-hant/index.html">所有應用程式 ↗</a></div>
         </nav>
     </header>
@@ -32,17 +32,25 @@
 <main id="main">
         <section class="hero container">
             <div class="hero-copy">
-                <p class="eyebrow">您的撲克筆記本</p>
+                <p class="eyebrow">您的德州撲克好夥伴</p>
                 <h1>記住玩家。<br><span>留住細節。</span></h1>
-                <p class="intro">將觀察整理成玩家筆記。使用 PokerNote，隨時掌握手牌範圍、牌桌座位與牌局紀錄。</p>
-                <div class="actions"><a class="button primary" href="#features">探索 PokerNote <span aria-hidden="true">↗</span></a><a class="button secondary" href="#faq">取得協助</a></div>
-                <p class="device-note">適用於 iPhone 與 iPad · iOS 17.6 以上</p>
+                <p class="intro">將觀察整理成玩家筆記。使用 pokerNote，隨時掌握手牌範圍、牌桌座位與牌局紀錄。</p>
+                <div class="actions"><a class="button primary" href="https://apps.apple.com/us/app/pokernote/id6471785611">在 App Store 下載 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#faq">取得協助</a></div>
+                <p class="device-note">App Store 免費下載 · 開發者 Michael Yang</p><p class="device-note">適用於 iPhone 與 iPad · iOS 17.6 以上</p>
             </div>
-            <figure class="hero-art">
-                <span class="suit suit-one" aria-hidden="true">♠</span><span class="suit suit-two" aria-hidden="true">♣</span>
-                <img src="../assets/app-icon.png" width="1024" height="1024" alt="PokerNote 圖示：筆記本、黑桃、鉛筆與撲克籌碼">
-                <figcaption>每個觀察，都有位置。</figcaption>
+            <figure class="hero-art store-preview">
+                <img src="../assets/players.png" width="392" height="696" alt="pokerNote 玩家列表，顯示顏色標籤、最愛、筆記與範圍百分比">
+                <figcaption>應用程式，一目了然。</figcaption>
             </figure>
+        </section>
+        <section class="container screenshots-section" aria-labelledby="screenshots-title">
+            <p class="eyebrow">走進 POKERNOTE</p><h2 id="screenshots-title">看看筆記如何呈現。</h2>
+            <p class="gallery-note">App Store 官方截圖。畫面以英文顯示，外觀可能因應用程式版本而異。</p>
+            <div class="screenshots-grid">
+                <figure><img src="../assets/table.png" width="392" height="696" loading="lazy" alt="pokerNote 牌桌，顯示九個以顏色區分的玩家座位"><figcaption>有序管理牌桌</figcaption></figure>
+                <figure><img src="../assets/players.png" width="392" height="696" loading="lazy" alt="pokerNote 玩家列表，顯示顏色標籤、最愛、筆記與範圍百分比"><figcaption>記住您的對手</figcaption></figure>
+                <figure><img src="../assets/tools.png" width="392" height="696" loading="lazy" alt="pokerNote 行動產生器，包含百分比滑桿與產生結果"><figcaption>依百分比產生行動結果。</figcaption></figure>
+            </div>
         </section>
         <section class="feature-section container" id="features">
             <div class="section-heading"><p class="eyebrow">不只是隨手筆記</p><h2>您的牌桌。<br>您的筆記。您的紀錄。</h2></div>
@@ -64,6 +72,7 @@
                     <details><summary>如何備份或匯出資料？</summary><p>開啟「功能 → 備份與還原」。選擇「匯出備份」，將 JSON 檔案儲存至「檔案」；或選擇「匯出 CSV」，匯出玩家、牌局、地點、牌桌或座位，以供試算表使用。</p></details>
                     <details><summary>還原備份會發生什麼事？</summary><p>在「功能 → 備份與還原」中選擇「還原備份」，再選取 JSON 備份。確認前請先檢閱內容。還原會取代所有目前資料，且無法復原。若要保留目前紀錄，請先匯出備份。CSV 檔案無法用於還原資料。</p></details>
                     <details><summary>應用程式會在不同裝置間同步筆記嗎？</summary><p>紀錄儲存在您的裝置上，不會自動雲端同步。匯出 JSON 備份，可保留獨立副本或在其他裝置還原。還原會取代目的地裝置目前的資料。</p></details>
+                    <details><summary>應用程式支援哪些語言？</summary><p>應用程式支援英文、西班牙文、繁體中文與簡體中文。法文與日文是網站翻譯。</p></details>
                     <details><summary>在哪裡可以查看隱私權資訊？</summary><p><a href="privacy/index.html">隱私權政策</a></p></details>
                 </div>
             </div>
@@ -73,6 +82,6 @@
             <a class="button primary email" href="mailto:contactraisecheckfold@gmail.com">聯絡支援 <span aria-hidden="true">↗</span></a>
         </section>
     </main>
-    <footer class="container"><p>© 2026 raisecheckfold.com · PokerNote</p><div><a href="#contact">聯絡支援</a><a href="privacy/index.html">隱私權政策</a><a href="../../zh-hant/index.html">所有應用程式 ↗</a></div></footer>
+    <footer class="container"><p>© 2026 raisecheckfold.com · pokerNote</p><div><a href="#contact">聯絡支援</a><a href="privacy/index.html">隱私權政策</a><a href="../../zh-hant/index.html">所有應用程式 ↗</a></div></footer>
 </body>
 </html>

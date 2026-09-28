@@ -71,3 +71,18 @@ footer div { display: flex; flex-wrap: wrap; gap: 24px; }
     .feature-section, .support-section, .contact-section { padding-block: 48px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* App Store imagery stays unaltered and is labeled by source. */
+.hero-art.store-preview { padding: 30px 24px 24px; }
+.hero-art.store-preview img { width: min(260px, 100%); border-radius: 24px; transform: none; border: 6px solid #102d3c; }
+.store-preview figcaption { margin-top: 20px; }
+.screenshots-section { padding-block: 32px 80px; }
+.gallery-note { color: var(--muted); max-width: 650px; font-size: 14px; }
+.screenshots-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-top: 32px; }
+.screenshots-grid figure { margin: 0; padding: 22px; border-radius: 28px; background: var(--glass-surface, #fffdfa); border: 1px solid var(--glass-edge, #d9dedb); box-shadow: var(--glass-shadow); }
+.screenshots-grid img { display: block; width: 100%; height: auto; border-radius: 14px; }
+.screenshots-grid figcaption { margin-top: 18px; font-size: 14px; font-weight: 650; }
+@media (max-width: 600px) {
+    .screenshots-section { padding-block: 20px 48px; }
+    .screenshots-grid { grid-template-columns: 1fr; gap: 20px; }
+    .screenshots-grid figure { width: 100%; max-width: 340px; justify-self: center; }
+}
