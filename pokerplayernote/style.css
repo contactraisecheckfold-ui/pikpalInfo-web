@@ -86,3 +86,11 @@ footer div { display: flex; flex-wrap: wrap; gap: 24px; }
     .screenshots-grid { grid-template-columns: 1fr; gap: 20px; }
     .screenshots-grid figure { width: 100%; max-width: 340px; justify-self: center; }
 }
+.session-section { padding-block: 64px 72px; border-top: 1px solid var(--line); }
+.session-intro { max-width: 720px; }
+.session-intro > p:last-child { color: var(--muted); font-size: 18px; }
+.session-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 0; margin: 36px 0 12px; list-style: none; counter-reset: session-step; }
+.session-steps li { counter-increment: session-step; padding: 28px; border-radius: 28px; background: var(--glass-surface, #fffdfa); border: 1px solid var(--glass-edge, #d9dedb); box-shadow: var(--glass-shadow); }
+.session-steps li::before { content: counter(session-step, decimal-leading-zero); display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--glass-surface, #fff); color: var(--glass-accent, #216978); font-size: 13px; font-weight: 700; }
+.session-steps p { color: var(--muted); font-size: 14px; margin-bottom: 0; }
+@media (max-width: 768px) { .session-steps { grid-template-columns: 1fr; } .session-section { padding-block: 48px; } }

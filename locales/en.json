@@ -303,5 +303,15 @@
   "301": "Managing your data",
   "302": "You can manage player and session records in the app. Removing the app removes its local data; exported files and backups must be managed separately. Keep a backup before restoring data or removing the app if you want to retain your records.",
   "303": "If you email support, your email address and the information you send are used to respond to your request. Avoid including private player notes unless needed to explain your issue.",
-  "304": "This page will be updated when the app’s data handling changes."
+  "304": "This page will be updated when the app’s data handling changes.",
+  "305": "Sessions",
+  "306": "SESSION RECORDS",
+  "307": "Every session tells a story.",
+  "308": "Keep a clear record of where you played, how long you stayed, and how the session ended. pokerNote brings your session details and results together so you can review your history over time.",
+  "309": "Log the essentials",
+  "310": "Open Sessions and tap +. Add the date, start and end times, location, game type, and stakes to give each session its context.",
+  "311": "Track what goes in and out",
+  "312": "Enter your buy-in, any add-ons, and your cash-out. The session result is your cash-out minus your buy-in and add-ons. Edit a session when you need to correct a detail.",
+  "313": "Review the bigger picture",
+  "314": "Switch between All, Month, and Year to see total profit or loss, total time played, and average hourly rate for the selected period. Export session records as CSV when you want to review them in a spreadsheet."
 }

@@ -303,5 +303,15 @@
   "301": "Gestionar tus datos",
   "302": "Puedes gestionar los registros de jugadores y sesiones en la aplicación. Eliminar la aplicación elimina sus datos locales; los archivos exportados y las copias de seguridad se gestionan por separado. Guarda una copia antes de restaurar datos o eliminar la aplicación si quieres conservar tus registros.",
   "303": "Si escribes a soporte, tu dirección de correo electrónico y la información que envíes se utilizan para responder a tu solicitud. Evita incluir notas privadas de jugadores salvo que sean necesarias para explicar el problema.",
-  "304": "Esta página se actualizará cuando cambie el tratamiento de datos de la aplicación."
+  "304": "Esta página se actualizará cuando cambie el tratamiento de datos de la aplicación.",
+  "305": "Sesiones",
+  "306": "REGISTROS DE SESIONES",
+  "307": "Cada sesión cuenta una historia.",
+  "308": "Lleva un registro claro de dónde jugaste, cuánto tiempo estuviste y cómo terminó la sesión. pokerNote reúne los detalles y resultados para que puedas revisar tu historial con el tiempo.",
+  "309": "Registra lo esencial",
+  "310": "Abre Sesiones y pulsa +. Añade la fecha, las horas de inicio y fin, la ubicación, el tipo de juego y los límites para dar contexto a cada sesión.",
+  "311": "Controla las entradas y salidas",
+  "312": "Introduce la entrada, las recargas y la retirada. El resultado es la retirada menos la entrada y las recargas. Edita la sesión cuando necesites corregir algún detalle.",
+  "313": "Revisa el conjunto",
+  "314": "Alterna entre Todo, Mes y Año para ver el beneficio o pérdida total, el tiempo jugado y la media por hora del período elegido. Exporta las sesiones como CSV para revisarlas en una hoja de cálculo."
 }
