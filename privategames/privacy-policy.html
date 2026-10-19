@@ -26,7 +26,9 @@
       <li><strong>Provider subscription records:</strong> an account-linked purchase identifier, Apple product and transaction identifiers, subscription status, expiration dates, and signed transaction information used to verify access. Apple processes subscription payments; Private Games does not receive your payment-card number.</li>
       <li><strong>Service and support information:</strong> technical request and error logs generated when operating the service, and information you send when contacting support.</li>
     </ul>
-    <p>You can browse public game listings without creating an account. Browsing still involves requests to our hosting and backend providers. Venue locations are entered by providers; the current service does not request your device’s GPS location.</p>
+    <p>You can browse public game listings without creating an account. Browsing still involves requests to our hosting and backend providers. Venue locations are entered by providers. If you choose “Use my location” in the player app, your device or browser asks for location access. We use that position on your device to filter games by approximate distance; the app does not save or upload your position to our Firebase database. You can choose a city without granting location access.</p>
+
+    <p>For nearby search, we store approximate coordinates for the public game area. The provider app sends the public city or area text to the operating system’s geocoding service to locate it. Coordinates are rounded to approximately a kilometre of precision. The private venue address is not used for public distance search. Distance estimates refer to the public area and may differ from the distance to the venue.</p>
 
     <h2>How we use information</h2>
     <p>We use this information to authenticate users, publish and display games, manage reservations and waiting lists, show seat availability, verify provider subscriptions, prevent misuse, troubleshoot errors, and respond to support requests.</p>
@@ -46,7 +48,7 @@
 
     <h2>Your choices and requests</h2>
     <p>You may browse without signing in and cancel reservations through the app. To request access to, correction of, or deletion of your account and associated information, email <a href="mailto:contactraisecheckfold@gmail.com">contactraisecheckfold@gmail.com</a> from your account email address. We may ask for information needed to verify the request. Do not send your password or payment-card details.</p>
-    <p>You can manage or cancel an Apple subscription in your Apple account’s <a href="https://apps.apple.com/account/subscriptions">subscription settings</a>. Requesting account deletion does not itself cancel an Apple subscription. Subscription cancellation does not itself delete your Private Games account.</p>
+    <p>You can revoke location permission in your device or browser settings and continue using the city filter. You can manage or cancel an Apple subscription in your Apple account’s <a href="https://apps.apple.com/account/subscriptions">subscription settings</a>. Requesting account deletion does not itself cancel an Apple subscription. Subscription cancellation does not itself delete your Private Games account.</p>
 
     <h2>Children</h2>
     <p>Private Games is intended for adults. Do not create an account or submit personal information if you are below the legal age applicable to your participation. Contact us if you believe a child has provided personal information so we can investigate and remove it as appropriate.</p>
