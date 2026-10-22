@@ -43,3 +43,6 @@ footer { display: flex; flex-wrap: wrap; gap: 24px; border-top: 1px solid #45647
 @media (max-width: 600px) {
  .app-screens { grid-template-columns: 1fr; max-width: 340px; gap: 32px; }
 }
+.app-downloads { margin-block: 24px; }
+.app-downloads .button { font-size: 14px; }
+.download-note { font-size: 14px; margin-block: 24px 0; }

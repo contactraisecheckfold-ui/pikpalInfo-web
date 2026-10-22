@@ -343,5 +343,10 @@
   "341": "加入前查看牌局详情",
   "342": "查看你的牌局与空位",
   "343": "管理座位与预约",
-  "344": "英文版 App 截图，使用示例或演示牌局。画面可能因版本而异。"
+  "344": "英文版 App 截图，使用示例或演示牌局。画面可能因版本而异。",
+  "345": "获取 iPhone 版 Player（TestFlight）",
+  "346": "获取 iPhone 版 Provider（TestFlight）",
+  "347": "下载 Android 版 Player（APK）",
+  "348": "加入 Provider Android 测试",
+  "349": "iPhone 测试版需要 TestFlight。Android 版 Player 可直接下载 APK；Provider Android 测试需要报名。"
 }

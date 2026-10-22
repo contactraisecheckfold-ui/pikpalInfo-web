@@ -343,5 +343,10 @@
   "341": "Consultez les détails avant de rejoindre une partie",
   "342": "Consultez vos parties et les places disponibles",
   "343": "Gérez les places et les réservations",
-  "344": "Captures de l’application en anglais avec des parties d’exemple ou de démonstration. Les écrans peuvent varier selon la version."
+  "344": "Captures de l’application en anglais avec des parties d’exemple ou de démonstration. Les écrans peuvent varier selon la version.",
+  "345": "Obtenir Player pour iPhone (TestFlight)",
+  "346": "Obtenir Provider pour iPhone (TestFlight)",
+  "347": "Télécharger Player pour Android (APK)",
+  "348": "Participer au test Android de Provider",
+  "349": "La bêta iPhone nécessite TestFlight. Player pour Android se télécharge directement au format APK ; les tests Android de Provider nécessitent une inscription."
 }
