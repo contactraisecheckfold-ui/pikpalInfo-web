@@ -346,7 +346,7 @@
   "344": "Captures de l’application en anglais avec des parties d’exemple ou de démonstration. Les écrans peuvent varier selon la version.",
   "345": "Obtenir Player pour iPhone (TestFlight)",
   "346": "Obtenir Provider pour iPhone (TestFlight)",
-  "347": "Télécharger Player pour Android (APK)",
+  "347": "Participer au test Android de Player",
   "348": "Participer au test Android de Provider",
-  "349": "La bêta iPhone nécessite TestFlight. Player pour Android se télécharge directement au format APK ; les tests Android de Provider nécessitent une inscription."
+  "349": "La bêta iPhone nécessite TestFlight. Les tests Android de Player et Provider nécessitent une inscription."
 }

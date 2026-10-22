@@ -346,7 +346,7 @@
   "344": "英文版 App 截圖，使用範例或示範牌局。畫面可能因版本而異。",
   "345": "取得 iPhone 版 Player（TestFlight）",
   "346": "取得 iPhone 版 Provider（TestFlight）",
-  "347": "下載 Android 版 Player（APK）",
+  "347": "加入 Player Android 測試",
   "348": "加入 Provider Android 測試",
-  "349": "iPhone 測試版需要 TestFlight。Android 版 Player 可直接下載 APK；Provider Android 測試需要報名。"
+  "349": "iPhone 測試版需要 TestFlight。Player 與 Provider 的 Android 測試均需要報名。"
 }

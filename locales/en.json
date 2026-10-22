@@ -346,7 +346,7 @@
   "344": "English app screenshots with sample or demo games. Screens may vary by version.",
   "345": "Get Player for iPhone (TestFlight)",
   "346": "Get Provider for iPhone (TestFlight)",
-  "347": "Download Player for Android (APK)",
+  "347": "Join Player Android testing",
   "348": "Join Provider Android testing",
-  "349": "iPhone beta requires TestFlight. Android Player is a direct APK download; Provider Android testing requires enrollment."
+  "349": "iPhone beta requires TestFlight. Android testing for Player and Provider requires enrollment."
 }
