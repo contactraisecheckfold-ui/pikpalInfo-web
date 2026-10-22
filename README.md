@@ -16,7 +16,7 @@ Every page has a matching HTML language, canonical URL, and reciprocal `hreflang
 
 1. Edit the English HTML layout/content in `locales/templates/` rather than the generated public pages.
 2. Update the corresponding text in `locales/en.json` and all five translated catalogs. Numeric keys are stable translation IDs; append new IDs rather than renumbering existing entries. Names and email addresses intentionally remain unchanged. Keep inline text fragments consistent with their surrounding sentence.
-3. Run `python3 scripts/build_locales.py` to regenerate the 48 public pages. This optional authoring command uses only the Python standard library. Generated pages are checked in, so hosting requires no build step.
+3. Run `python3 scripts/build_locales.py` to regenerate the 54 public pages. This optional authoring command uses only the Python standard library. Generated pages are checked in, so hosting requires no build step.
 4. Run the validation commands below and review layout in a browser.
 
 The generator requires complete catalogs and rejects unknown source text. It translates visible text, document titles, descriptions, image alternatives, and accessible labels. Asset paths remain shared; local page links are rewritten for each language. The previously incomplete Traditional Chinese pikPal policy is now translated from the same English source as the other languages.
@@ -30,7 +30,7 @@ The generator requires complete catalogs and rejects unknown source text. It tra
 - `assets/css/languages.css`: language navigation and translated heading layout.
 - `assets/css/glass.css`: shared liquid-glass-inspired theme, with app palettes, opaque fallbacks, and reduced-transparency/motion support. Loaded last by the page generator.
 - `locales/`: translation catalogs and source templates.
-- `pikpalinfo/`, `pokerplayernote/`, `dogkona/`: generated public pages, shared app styles, and assets.
+- `pikpalinfo/`, `pokerplayernote/`, `dogkona/`, `privategames/`: generated public pages, shared app styles, and assets.
 - `dogkona/index/`, `dogkona/privacy/`: existing compatibility redirects.
 
 Keep relative links so previews work without the production domain. Existing public paths, `CNAME`, and advertising verification files are deployment inputs and should remain stable.
@@ -52,3 +52,5 @@ The pikPal App Store buttons still have placeholder destinations. The external A
 ## pokerNote listing alignment
 
 The pokerNote marketing and privacy pages were reconciled with the [App Store listing](https://apps.apple.com/us/app/pokernote/id6471785611) and Apple's live lookup response on September 28, 2026. The listing's four app languages are distinct from the website's six translations. Live release notes confirm CSV export and JSON backup/restore; do not infer released features solely from local development code. Screenshots and their source URLs are documented in `pokerplayernote/assets/SOURCES.md`. Privacy copy separates local records from advertising and attributes the published disclosure categories to the App Store listing.
+
+Private Games has a six-language project landing page with separate Player and Provider sections. Both link to the existing shared English support and privacy pages.

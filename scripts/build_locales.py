@@ -11,7 +11,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 LANGUAGES = {'en': 'English', 'fr': 'Français', 'ja': '日本語', 'zh-Hant': '繁體中文', 'zh-Hans': '简体中文', 'es': 'Español'}
 LANG_LABELS = {'en': 'Language', 'fr': 'Langue', 'ja': '言語', 'zh-Hant': '語言', 'zh-Hans': '语言', 'es': 'Idioma'}
-PAGES = ['index.html', 'pikpalinfo/index.html', 'pikpalinfo/android-beta.html', 'pikpalinfo/privacy-policy.html', 'pokerplayernote/index.html', 'pokerplayernote/privacy/index.html', 'dogkona/index.html', 'dogkona/privacy-policy.html']
+PAGES = ['index.html', 'pikpalinfo/index.html', 'pikpalinfo/android-beta.html', 'pikpalinfo/privacy-policy.html', 'pokerplayernote/index.html', 'pokerplayernote/privacy/index.html', 'dogkona/index.html', 'dogkona/privacy-policy.html', 'privategames/index.html']
 ORIGIN = 'https://www.raisecheckfold.com/'
 
 
